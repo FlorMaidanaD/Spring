@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- html xmlns:th="http://www.thymeleaf.org" = Para evitar que HTML arroje errores por trabajar con elementos de thymeleaf -->
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<!-- <etiqueta-Padre th:replace = "/Carpeta-Plantilla/etiqueta-hijo :: etiqueta-Padre"></etiqueta-Padre> -->
+<head th:replace="/fragments/head1 :: head"></head>
+
+<body>
+  <!-- NAVBAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+  <header th:replace="fragments/navbar :: header"></header>
+
+  <main id="main">
+    <!-- EXITO / ERROR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+    <div th:replace="fragments/exitoError :: div"></div>
+
+
+    <!-- TEXTO DEL INDEX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+    <section class="contenedorMain">
+      <div class="tituloBiblioteca">
+        <h1>BIBLIOTECA EGG</h1>
+      </div>
+      <div class="container contenedorLibros">
+        <p class="tituloLibros">Encontrá todos los Libros Aquí!</p>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+  <footer th:replace="fragments/footer :: footer"></footer>
+
+  <!--	DARK MODE  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+  <script src="/js/toggle.js"></script>
+
+  <!--	SCRIP de BOOTSTRAP v5.3  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+  <script th:replace="fragments/bootstrap :: script"></script>
+
+</body>
+</html>

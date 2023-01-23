@@ -1,0 +1,143 @@
+#boton{
+  width: 150px;
+
+  color: #11434d;
+  background-color: #ffcb00;
+  border: none;
+
+  transition: 1s all;
+  cursor: pointer;
+
+  box-shadow: 0px 2px 16px 4px rgba(0, 0, 0, 0.36);
+}
+
+#boton:hover {
+  border: none;
+  transform: scale(1.2);
+}
+
+#boton:active {
+  box-shadow: none;
+}
+
+.divGuardar{
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-sizing: border-box;
+  
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+}
+
+.divGuardar1{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-sizing: border-box;
+  
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+}
+
+.divGuardar2{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-sizing: border-box;
+  
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+}
+
+#botonAmarillo {
+  width: 150px;
+
+  color: #37474f;
+  background-color: #ffcb00;
+  border: none;
+
+  transition: 1s all;
+  cursor: pointer;
+
+  box-shadow: 0px 2px 16px 4px rgba(0, 0, 0, 0.36);
+}
+
+#botonAmarillo:hover {
+  transform: scale(1.2);
+}
+
+#botonAmarillo:active {
+  box-shadow: none;
+}
+
+#divVolver {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-sizing: border-box;
+  
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+}
+
+#divVolver1 {
+  position: absolute;
+  top: 75%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+
+  box-sizing: border-box;
+  
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+}
+
+#divVolver2 {
+  position: absolute;
+  top: 82%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+
+  box-sizing: border-box;
+  
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+}
+
+.botonVolver {
+  width: 150px;
+
+  transition: 1s all;
+  cursor: pointer;
+
+  box-shadow: 0px 2px 16px 4px rgba(0, 0, 0, 0.36);
+}
+
+.botonVolver:hover {
+  transform: scale(1.2);
+}
+
+.botonVolver:active {
+  box-shadow: none;
+}

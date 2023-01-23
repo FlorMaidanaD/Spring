@@ -53,6 +53,8 @@ public class LibroServicio {
         libros = libroRepositorio.findAll();
         return libros;
     }
+
+    //tengo que validar si el id es correcto o si existe, por eso con el optional me fijo si la respuesta es verdadera
     public void modificarLibro (Long isbn, String titulo, String idAutor, String idEditorial, Integer ejemplares)throws MiException{
         validarTodo(isbn, titulo, idAutor, idEditorial, ejemplares);
         Optional <Libro> respuesta = libroRepositorio.findById(isbn);

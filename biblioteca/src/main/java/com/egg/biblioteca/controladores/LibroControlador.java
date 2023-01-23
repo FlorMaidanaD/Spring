@@ -30,6 +30,9 @@ public class LibroControlador {
     @Autowired
     private EditorialServicio editorialServicio;
 
+
+
+    // ModelMap me sirve para validar
     @GetMapping ("/registrar")
     public String registrar(ModelMap modelo){
         List<Autor> autores= autorServicio.listarAutores();
